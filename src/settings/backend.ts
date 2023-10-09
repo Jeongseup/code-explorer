@@ -13,11 +13,17 @@ export interface BackendSettings {
 
 // Configuration matches local devnet as defined in
 // https://github.com/cosmos/cosmjs/tree/main/scripts/wasmd
+// const devnetSettings: BackendSettings = {
+//   nodeUrls: ["http://localhost:26659"],
+//   denominations: ["ucosm", "ustake"],
+//   addressPrefix: "wasm",
+//   gasPrice: GasPrice.fromString("0.25ucosm"),
+// };
 const devnetSettings: BackendSettings = {
-  nodeUrls: ["http://localhost:26659"],
-  denominations: ["ucosm", "ustake"],
-  addressPrefix: "wasm",
-  gasPrice: GasPrice.fromString("0.25ucosm"),
+  nodeUrls: ["https://rpc-office.cosmostation.io/station-testnet/"],
+  denominations: ["uiss"],
+  addressPrefix: "station",
+  gasPrice: GasPrice.fromString("0.25uiss"),
 };
 
 // const oysternetSettings: BackendSettings = {
